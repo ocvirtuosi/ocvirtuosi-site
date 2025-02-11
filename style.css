@@ -8,6 +8,108 @@
 /*
 
 */
+.mainpage {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+}
+.mainpage-image {
+    width: 100%;
+    height: auto;
+}
+.hamburger {
+    display: none;
+}
+@media (max-width: 850px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        right: 56px;
+        align-items: flex-end;
+        text-align: right;
+    }
+    .burger-links-align {
+        display: flex;
+        margin-top: 140px;
+        height: 100px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+.burger-links {
+    position: absolute;
+    top: -56px;
+    background: #761214;
+    transition: translate 350ms;
+    translate: 306px;
+    height: 100vh;
+    width: 250px;
+}
+.burger-link {
+    padding-right: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+.burger-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-box::before,
+.burger-box::after,
+.burger-box input {
+    z-index: 2;
+    content: "";
+    width: 30px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 100px;
+    transition:
+        opacity 350ms,
+        width 350ms,
+        rotate 350ms,
+        transform 350ms;
+    transform-origin: left center;
+    animation-timing: 200ms ease-in-out;
+}
+
+.burger-box:has(input:checked)::before {
+    display: inline-block;
+    rotate: 45deg;
+    width: 39.5979797464px;
+    transform: translate(0px, -2px);
+}
+.burger-box:has(input:checked)::after {
+    rotate: -45deg;
+    width: 39.5979797464px;
+    transform: translate(0px, 2px);
+}
+.burger-box:has(input:checked) + aside {
+    translate: 56px;
+}
+
+.burger-box input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.burger-box input:checked {
+    opacity: 0;
+}
+/*
+
+
+
+
+
+*/
 header {
     display: flex;
     background-color: #ddd;
@@ -34,6 +136,12 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 850px) {
+    .header-links {
+        display: none;
+    }
+}
 .header-link {
     color: #fff;
     text-decoration: none;
@@ -48,12 +156,12 @@ header {
     justify-content: center;
 }
 body {
+    overflow-x: hidden;
     margin: 0;
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
     background-color: #eee;
 }
 .second-body {
@@ -74,13 +182,13 @@ body {
 */
 footer {
     display: flex;
-    background-color: #00f;
+    background-color: #ddd;
     justify-content: center;
     align-items: center;
 }
 .inner-footer {
     display: flex;
-    background-color: #0ff;
+    background-color: #761214;
     width: 1200px;
     margin: 10px;
     justify-content: center;
