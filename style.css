@@ -13,6 +13,7 @@
     border-radius: 10px;
     overflow: hidden;
     flex-direction: column;
+    align-items: center;
 }
 .mainpage-image {
     width: 100%;
@@ -188,6 +189,12 @@ body {
 }
 .drum-image {
     max-width: 360px;
+}
+.neighbor {
+    max-width: 480px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 25px;
 }
 /*
 
