@@ -26,7 +26,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 56px;
+        top: 61px;
         right: 56px;
         align-items: flex-end;
         text-align: right;
@@ -41,7 +41,7 @@
 }
 .burger-links {
     position: absolute;
-    top: -56px;
+    top: -61px;
     background: #761214;
     transition: translate 350ms;
     translate: 306px;
@@ -111,8 +111,8 @@
 
 */
 header {
+    margin-top: 10px;
     display: flex;
-    background-color: #ddd;
     justify-content: center;
     align-items: center;
 }
@@ -156,15 +156,18 @@ header {
     justify-content: center;
 }
 body {
+    min-height: 100vh;
     overflow-x: hidden;
     margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-color: #eee;
 }
 .second-body {
+    padding: 10px;
     display: flex;
     border-radius: 10px;
     width: 1200px;
@@ -177,21 +180,33 @@ body {
     max-width: 1200px;
     justify-content: left;
 }
+.drum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 11pt;
+}
+.drum-image {
+    max-width: 360px;
+}
 /*
 
 */
 footer {
+    margin-bottom: 10px;
     display: flex;
-    background-color: #ddd;
     justify-content: center;
     align-items: center;
 }
 .inner-footer {
     display: flex;
     background-color: #761214;
-    width: 1200px;
+    width: 1180px;
     margin: 10px;
+    color: #fff;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 10px;
+    padding: 10px;
 }
