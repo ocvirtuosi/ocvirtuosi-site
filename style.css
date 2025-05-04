@@ -10,6 +10,11 @@ html {
 }
 @media (max-width: 100vh) {
     * {
+        font-size: 18px;
+    }
+}
+@media (max-width: 50vh) {
+    * {
         font-size: 15px;
     }
 }
@@ -200,7 +205,6 @@ body {
 
 @media (max-width: 100vh) {
     .aligned-body {
-        max-width: 1200px;
         align-items: center;
         flex-direction: column;
     }
@@ -243,10 +247,19 @@ body {
         font-size: 11px;
     }
     .drum-image {
+        max-width: 260px;
+    }
+    .neighbor {
+        margin-right: 0;
+        max-width: 280px;
+    }
+}
+@media (max-width: 50vh) {
+    .drum-image {
         max-width: 200px;
     }
     .neighbor {
-        max-width: 260px;
+        max-width: 200px;
     }
 }
 /*
@@ -277,13 +290,10 @@ footer {
     margin-right: 10px;
 }
 @media (max-width: 100vh) {
+    .inner-footer {
+        flex-direction: column;
+    }
     .inner-footer * {
         font-size: 12px;
-    }
-}
-
-@media (max-width: 50vh) {
-    .inner-footer * {
-        font-size: 10px;
     }
 }
