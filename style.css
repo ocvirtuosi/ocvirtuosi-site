@@ -238,9 +238,7 @@ body {
     max-width: 480px;
     background-color: #ccc;
     padding: 10px;
-    border-radius: 25px;
-    padding-right: 20px;
-    margin-right: 25px;
+    border-radius: 1vh;
 }
 @media (max-width: 100vh) {
     .drum {
@@ -250,7 +248,6 @@ body {
         max-width: 260px;
     }
     .neighbor {
-        margin-right: 0;
         max-width: 280px;
     }
 }
