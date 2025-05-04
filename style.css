@@ -262,6 +262,11 @@ body {
         max-width: 200px;
     }
 }
+@media (max-width: 40vh) {
+    .neighbor {
+        max-width: 140px;
+    }
+}
 /*
 
 */
