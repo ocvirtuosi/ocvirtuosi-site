@@ -40,7 +40,7 @@ html {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 63px;
+        top: 65px;
         right: 56px;
         align-items: flex-end;
         text-align: right;
@@ -55,7 +55,7 @@ html {
 }
 .burger-links {
     position: absolute;
-    top: -63px;
+    top: -65px;
     background: #761214;
     transition: translate 350ms;
     translate: 306px;
@@ -70,7 +70,7 @@ html {
 .burger-box {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 9.5px;
 }
 
 .burger-box::before,
@@ -79,7 +79,7 @@ html {
     z-index: 2;
     content: "";
     width: 30px;
-    height: 8px;
+    height: 3px;
     background-color: #fff;
     border-radius: 100px;
     transition:
