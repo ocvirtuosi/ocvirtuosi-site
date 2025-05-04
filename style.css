@@ -5,6 +5,11 @@
     font-size: 15pt;
     font-style: normal;
 }
+@media (max-width: 530px) {
+    * {
+        font-size: 15px;
+    }
+}
 /*
 
 */
@@ -90,7 +95,7 @@
     transform: translate(0px, 2px);
 }
 .burger-box:has(input:checked) + aside {
-    translate: 56px;
+    translate: 57px;
 }
 
 .burger-box input {
@@ -189,8 +194,10 @@ body {
     max-width: 1200px;
     justify-content: left;
 }
+
 @media (max-width: 1100px) {
     .aligned-body {
+        max-width: 1200px;
         align-items: center;
         flex-direction: column;
     }
@@ -199,10 +206,16 @@ body {
     font-size: 24pt;
     font-weight: bold;
 }
+@media (max-width: 530px) {
+    .headline {
+        font-size: 24px;
+    }
+}
+
 .videos {
     max-width: 560px;
     text-align: center;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 .drum {
     display: flex;
@@ -222,6 +235,17 @@ body {
     padding-right: 20px;
     margin-right: 25px;
 }
+@media (max-width: 530px) {
+    .drum {
+        font-size: 11px;
+    }
+    .drum-image {
+        max-width: 200px;
+    }
+    .neighbor {
+        max-width: 260px;
+    }
+}
 /*
 
 */
@@ -232,13 +256,10 @@ footer {
     align-items: center;
 }
 .inner-footer {
-    font-size: 12pt;
     display: flex;
     background-color: #761214;
     width: 1180px;
     margin: 10px;
-    margin-left: 0;
-    margin-right: 0;
     color: #fff;
     justify-content: space-around;
     align-items: center;
@@ -247,7 +268,19 @@ footer {
     padding: 10px;
 }
 .inner-footer * {
+    font-size: 16px;
     margin: 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
+@media (max-width: 530px) {
+    .inner-footer * {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .inner-footer * {
+        font-size: 10px;
+    }
 }
