@@ -5,6 +5,9 @@
     font-size: 15pt;
     font-style: normal;
 }
+html {
+    overflow-x: hidden;
+}
 @media (max-width: 100vh) {
     * {
         font-size: 15px;
@@ -33,7 +36,7 @@
         flex-direction: column;
         position: absolute;
         top: 63px;
-        right: 57px;
+        right: 56px;
         align-items: flex-end;
         text-align: right;
     }
@@ -95,7 +98,7 @@
     transform: translate(0px, 2px);
 }
 .burger-box:has(input:checked) + aside {
-    translate: 57px;
+    translate: 56px;
 }
 
 .burger-box input {
