@@ -202,6 +202,19 @@ body {
     max-width: 1200px;
     justify-content: left;
 }
+.alert {
+    display: flex;
+    background-color: #761214;
+    max-width: 1180px;
+    margin: 10px;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+}
 
 @media (max-width: 100vh) {
     .aligned-body {
