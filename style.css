@@ -1,10 +1,3 @@
-* {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 15pt;
-    font-style: normal;
-}
 html {
     overflow-x: hidden;
 }
@@ -203,7 +196,7 @@ body {
     justify-content: left;
 }
 .alert {
-    display: flex;
+    display: none; /*flex*/
     background-color: #761214;
     max-width: 1180px;
     margin: 10px;
