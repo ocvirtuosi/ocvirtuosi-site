@@ -1,5 +1,8 @@
 html {
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 @media (max-width: 100vh) {
     * {
