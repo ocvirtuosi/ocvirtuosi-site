@@ -3,6 +3,7 @@ html {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    line-height: 135%;
 }
 @media (max-width: 100vh) {
     * {
@@ -27,6 +28,8 @@ html {
 .mainpage-image {
     width: 100%;
     height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .hamburger {
     display: none;
@@ -221,6 +224,7 @@ body {
 .headline {
     font-size: 24pt;
     font-weight: bold;
+    line-height: 200%;
 }
 @media (max-width: 50vh) {
     .headline {
