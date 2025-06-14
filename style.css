@@ -201,6 +201,9 @@ body {
     max-width: 1200px;
     justify-content: left;
 }
+.spacer {
+    color: rgba(0, 0, 0, 0);
+}
 .alert {
     display: none; /*flex*/
     background-color: #761214;
